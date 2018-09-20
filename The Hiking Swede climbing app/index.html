@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Climb On!</title>
+</head>
+
+
+
+<body>
+
+
+
+    <center>
+        <h1>Permit Request</h1>
+    </center>
+    <center><button onclick="typeWriter()">Start Here</button></center>
+    <p id="demo"></p>
+    <center>
+        <script>
+            var i = 0;
+            var txt = 'Welcome to the site for climbers by climbers. Press the belay button below to enter.';
+            var speed = 50;
+            function typeWriter() {
+                if (i < txt.length) {
+                    document.getElementById("demo").innerHTML += txt.charAt(i);
+                    i++;
+                    setTimeout(typeWriter, speed);
+                }
+            }
+        </script>
+        <br>
+        <a href="basecamp.html">
+            <img src="https://cdn5.vectorstock.com/i/1000x1000/85/49/rock-climber-icon-black-color-flat-style-simple-vector-21158549.jpg"
+                alt="index.html" style="width:150px;height:70px;border:0">
+        </a>
+</body>
+
+</html>
+</body>
+
+</html>
