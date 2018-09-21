@@ -45,11 +45,17 @@
 
 
 </head>
+<div id="myDIV"></div>
 
-<body style="background-color:rgb(197, 240, 112);">
 
     <!-- Sidebar -->
-    <div class="w3-sidebar w3-bar-item w3-collapse w3-card" style="width:200px;" id="mySidebar">
+    <center>
+    <div class="w3-teal">
+            <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">☰</button>
+            <div class="w3-container">
+            </div></center>
+    <center>
+    <div class="w3-sidebar w3-bar-item w3-collapse w3-card" style="width:300px;" id="mySidebar">
         <a href="climbs.html" class="w3-bar-item w3-button">Climbs</a><br>
         <a href="photos.html" class="w3-bar-item w3-button">Photos</a><br>
         <a href="video.html" class="w3-bar-item w3-button">video</a><br>
@@ -58,13 +64,10 @@
         <br>
         <button class="w3-bar-item w3-button w3-hide-large" onclick="w3_close()">Close ×</button><br>
     </div>
+</center>
+    <div class="w3-main" style="margin-center:200px">
 
-    <div class="w3-main" style="margin-left:200px">
-
-        <div class="w3-teal">
-            <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">☰</button>
-            <div class="w3-container">
-            </div>
+        
         </div>
     </div>
 
@@ -118,23 +121,9 @@
 
     <div class="w3-main" style="margin-left:200px">
 
-        <div class="w3-teal">
-            <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">☰</button>
-            <div class="w3-container">
-            </div>
-        </div>
+
     </div>
-
-    <script>
-        function w3_open() {
-            document.getElementById("mySidebar").style.display = "block";
-        }
-        function w3_close() {
-            document.getElementById("mySidebar").style.display = "none";
-        }
-
-    </script>
-
+    </div>
 
 </body>
 
